@@ -1,0 +1,58 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="28" height="28" rx="6" fill="currentColor" stroke="currentColor" stroke-width="0.5"/>
+  <rect x="4" y="4" width="24" height="24" rx="4" fill="white" stroke="none"/>
+  
+  <!-- Display Screen -->
+  <rect x="6" y="6" width="20" height="6" rx="2" fill="#f3f4f6" stroke="#e5e7eb" stroke-width="0.5"/>
+  <text x="24" y="10.5" font-family="monospace" font-size="3" text-anchor="end" fill="#374151">123</text>
+  
+  <!-- Button Grid -->
+  <!-- Row 1 -->
+  <rect x="6" y="14" width="4" height="3" rx="1" fill="#ef4444" stroke="#dc2626" stroke-width="0.2"/>
+  <text x="8" y="16.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="white">C</text>
+  
+  <rect x="11" y="14" width="4" height="3" rx="1" fill="#6b7280" stroke="#4b5563" stroke-width="0.2"/>
+  <text x="13" y="16.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="white">±</text>
+  
+  <rect x="16" y="14" width="4" height="3" rx="1" fill="#6b7280" stroke="#4b5563" stroke-width="0.2"/>
+  <text x="18" y="16.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="white">%</text>
+  
+  <rect x="21" y="14" width="4" height="3" rx="1" fill="#f59e0b" stroke="#d97706" stroke-width="0.2"/>
+  <text x="23" y="16.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="white">÷</text>
+  
+  <!-- Row 2 -->
+  <rect x="6" y="18" width="4" height="3" rx="1" fill="#e5e7eb" stroke="#d1d5db" stroke-width="0.2"/>
+  <text x="8" y="20.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="#374151">7</text>
+  
+  <rect x="11" y="18" width="4" height="3" rx="1" fill="#e5e7eb" stroke="#d1d5db" stroke-width="0.2"/>
+  <text x="13" y="20.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="#374151">8</text>
+  
+  <rect x="16" y="18" width="4" height="3" rx="1" fill="#e5e7eb" stroke="#d1d5db" stroke-width="0.2"/>
+  <text x="18" y="20.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="#374151">9</text>
+  
+  <rect x="21" y="18" width="4" height="3" rx="1" fill="#f59e0b" stroke="#d97706" stroke-width="0.2"/>
+  <text x="23" y="20.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="white">×</text>
+  
+  <!-- Row 3 -->
+  <rect x="6" y="22" width="4" height="3" rx="1" fill="#e5e7eb" stroke="#d1d5db" stroke-width="0.2"/>
+  <text x="8" y="24.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="#374151">4</text>
+  
+  <rect x="11" y="22" width="4" height="3" rx="1" fill="#e5e7eb" stroke="#d1d5db" stroke-width="0.2"/>
+  <text x="13" y="24.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="#374151">5</text>
+  
+  <rect x="16" y="22" width="4" height="3" rx="1" fill="#e5e7eb" stroke="#d1d5db" stroke-width="0.2"/>
+  <text x="18" y="24.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="#374151">6</text>
+  
+  <rect x="21" y="22" width="4" height="3" rx="1" fill="#f59e0b" stroke="#d97706" stroke-width="0.2"/>
+  <text x="23" y="24.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="white">−</text>
+  
+  <!-- Row 4 -->
+  <rect x="6" y="26" width="9" height="3" rx="1" fill="#e5e7eb" stroke="#d1d5db" stroke-width="0.2"/>
+  <text x="10.5" y="28.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="#374151">0</text>
+  
+  <rect x="16" y="26" width="4" height="3" rx="1" fill="#e5e7eb" stroke="#d1d5db" stroke-width="0.2"/>
+  <text x="18" y="28.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="#374151">.</text>
+  
+  <rect x="21" y="26" width="4" height="3" rx="1" fill="#10b981" stroke="#059669" stroke-width="0.2"/>
+  <text x="23" y="28.2" font-family="sans-serif" font-size="2" text-anchor="middle" fill="white">=</text>
+</svg>
