@@ -1,0 +1,223 @@
+/* Calculator Container Styles */
+.calculatorContainer {
+  @apply relative w-full max-w-sm mx-auto;
+  @apply bg-white dark:bg-gray-800;
+  @apply rounded-3xl shadow-2xl;
+  @apply border border-gray-200 dark:border-gray-700;
+  @apply transition-all duration-300 ease-in-out;
+  @apply backdrop-blur-sm;
+}
+
+.calculatorContainer:hover {
+  @apply shadow-3xl transform scale-[1.02];
+}
+
+/* Display Container */
+.displayContainer {
+  @apply relative p-6 pb-4;
+  @apply bg-gradient-to-br from-gray-50 to-gray-100;
+  @apply dark:from-gray-900 dark:to-gray-800;
+  @apply rounded-t-3xl;
+  @apply border-b border-gray-200 dark:border-gray-700;
+}
+
+.displayContainer::before {
+  content: '';
+  @apply absolute inset-0 rounded-t-3xl;
+  @apply bg-gradient-to-br from-white/50 to-transparent;
+  @apply dark:from-white/5 dark:to-transparent;
+  @apply pointer-events-none;
+}
+
+/* Button Grid Container */
+.buttonGrid {
+  @apply p-6 pt-4;
+  @apply grid grid-cols-4 gap-3;
+  @apply bg-gradient-to-b from-gray-50 to-white;
+  @apply dark:from-gray-800 dark:to-gray-900;
+  @apply rounded-b-3xl;
+}
+
+/* Individual Button Styles */
+.button {
+  @apply relative h-16 rounded-2xl;
+  @apply font-semibold text-lg;
+  @apply transition-all duration-200 ease-out;
+  @apply active:scale-95;
+  @apply focus:outline-none focus:ring-4 focus:ring-opacity-50;
+  @apply shadow-lg hover:shadow-xl;
+  @apply border border-opacity-20;
+  @apply backdrop-blur-sm;
+}
+
+.button::before {
+  content: '';
+  @apply absolute inset-0 rounded-2xl;
+  @apply bg-gradient-to-b from-white/30 to-transparent;
+  @apply dark:from-white/10 dark:to-transparent;
+  @apply pointer-events-none;
+  @apply opacity-0 transition-opacity duration-200;
+}
+
+.button:hover::before {
+  @apply opacity-100;
+}
+
+.button:active {
+  @apply shadow-md;
+}
+
+/* Button Variants */
+.buttonDefault {
+  @apply bg-gradient-to-b from-gray-100 to-gray-200;
+  @apply dark:from-gray-600 dark:to-gray-700;
+  @apply text-gray-800 dark:text-gray-100;
+  @apply border-gray-300 dark:border-gray-500;
+  @apply hover:from-gray-200 hover:to-gray-300;
+  @apply dark:hover:from-gray-500 dark:hover:to-gray-600;
+  @apply focus:ring-gray-300 dark:focus:ring-gray-500;
+}
+
+.buttonOperator {
+  @apply bg-gradient-to-b from-blue-500 to-blue-600;
+  @apply dark:from-blue-600 dark:to-blue-700;
+  @apply text-white;
+  @apply border-blue-600 dark:border-blue-700;
+  @apply hover:from-blue-600 hover:to-blue-700;
+  @apply dark:hover:from-blue-500 dark:hover:to-blue-600;
+  @apply focus:ring-blue-400 dark:focus:ring-blue-500;
+}
+
+.buttonEquals {
+  @apply bg-gradient-to-b from-emerald-500 to-emerald-600;
+  @apply dark:from-emerald-600 dark:to-emerald-700;
+  @apply text-white;
+  @apply border-emerald-600 dark:border-emerald-700;
+  @apply hover:from-emerald-600 hover:to-emerald-700;
+  @apply dark:hover:from-emerald-500 dark:hover:to-emerald-600;
+  @apply focus:ring-emerald-400 dark:focus:ring-emerald-500;
+}
+
+.buttonClear {
+  @apply bg-gradient-to-b from-red-500 to-red-600;
+  @apply dark:from-red-600 dark:to-red-700;
+  @apply text-white;
+  @apply border-red-600 dark:border-red-700;
+  @apply hover:from-red-600 hover:to-red-700;
+  @apply dark:hover:from-red-500 dark:hover:to-red-600;
+  @apply focus:ring-red-400 dark:focus:ring-red-500;
+}
+
+.buttonSecondary {
+  @apply bg-gradient-to-b from-amber-500 to-amber-600;
+  @apply dark:from-amber-600 dark:to-amber-700;
+  @apply text-white;
+  @apply border-amber-600 dark:border-amber-700;
+  @apply hover:from-amber-600 hover:to-amber-700;
+  @apply dark:hover:from-amber-500 dark:hover:to-amber-600;
+  @apply focus:ring-amber-400 dark:focus:ring-amber-500;
+}
+
+/* Special Button Layouts */
+.buttonWide {
+  @apply col-span-2;
+}
+
+.buttonTall {
+  @apply row-span-2;
+}
+
+/* Theme Toggle Styles */
+.themeToggle {
+  @apply absolute top-4 right-4;
+  @apply w-10 h-10 rounded-full;
+  @apply bg-white/80 dark:bg-gray-800/80;
+  @apply border border-gray-300 dark:border-gray-600;
+  @apply flex items-center justify-center;
+  @apply transition-all duration-300 ease-in-out;
+  @apply hover:scale-110 hover:shadow-lg;
+  @apply focus:outline-none focus:ring-2 focus:ring-blue-500;
+  @apply backdrop-blur-sm;
+}
+
+.themeToggle:hover {
+  @apply bg-white dark:bg-gray-700;
+}
+
+/* Display Text Styles */
+.displayPrimary {
+  @apply text-right text-3xl font-light;
+  @apply text-gray-900 dark:text-gray-100;
+  @apply min-h-[2.5rem] flex items-end justify-end;
+  @apply font-mono tracking-wider;
+  @apply transition-all duration-200;
+}
+
+.displaySecondary {
+  @apply text-right text-sm opacity-60;
+  @apply text-gray-600 dark:text-gray-400;
+  @apply min-h-[1.25rem] flex items-center justify-end;
+  @apply font-mono;
+  @apply mb-1;
+}
+
+/* Animation Classes */
+.fadeIn {
+  @apply animate-pulse;
+}
+
+.slideUp {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 640px) {
+  .calculatorContainer {
+    @apply mx-4 max-w-none;
+  }
+  
+  .button {
+    @apply h-14 text-base;
+  }
+  
+  .displayPrimary {
+    @apply text-2xl;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .button {
+    @apply border-2;
+  }
+  
+  .buttonDefault {
+    @apply bg-white dark:bg-black;
+    @apply border-black dark:border-white;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  .calculatorContainer,
+  .themeToggle,
+  .displayPrimary {
+    @apply transition-none;
+  }
+  
+  .slideUp {
+    animation: none;
+  }
+}
