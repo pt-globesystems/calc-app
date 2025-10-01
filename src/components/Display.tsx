@@ -17,6 +17,8 @@ const Display: React.FC<DisplayProps> = ({
 }) => {
   // Format the display value to handle long numbers
   const formatDisplayValue = (val: string): string => {
+    if (!val) return '0'
+    
     if (val.length > 12) {
       const num = parseFloat(val)
       if (num > 999999999999 || num < -999999999999) {
@@ -30,7 +32,7 @@ const Display: React.FC<DisplayProps> = ({
   // Format the previous calculation display
   const formatPreviousCalculation = (): string => {
     if (!previousValue || !operation) return ''
-    const formattedPrev = formatDisplayValue(previousValue)
+    const formattedPrev = formatDisplayValue(previousValue || '0')
     return `${formattedPrev} ${operation}`
   }
 
@@ -53,7 +55,7 @@ const Display: React.FC<DisplayProps> = ({
           }`}
           style={{ minHeight: '2.5rem' }}
         >
-          {formatDisplayValue(value)}
+          {formatDisplayValue(value || '0')}
         </div>
       </div>
 
