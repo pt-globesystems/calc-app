@@ -15,11 +15,6 @@ export const metadata: Metadata = {
   description: 'A sleek and modern calculator app with light and dark mode support. Perform basic math operations with a beautiful, user-friendly interface.',
   keywords: ['calculator', 'math', 'arithmetic', 'dark mode', 'light mode'],
   authors: [{ name: 'Calc App Team' }],
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#1a1a1a' }
-  ],
   icons: {
     icon: '/favicon.ico',
     shortcut: '/calculator-icon.svg',
@@ -39,6 +34,15 @@ export const metadata: Metadata = {
   }
 }
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
+    { media: '(prefers-color-scheme: dark)', color: '#1a1a1a' }
+  ],
+}
+
 interface RootLayoutProps {
   children: React.ReactNode
 }
@@ -54,8 +58,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         suppressHydrationWarning
       >
         <ThemeProvider>
+          <ThemeToggle />
           <div className="min-h-screen flex flex-col">
-            <ThemeToggle />
             <main className="flex-1 flex items-center justify-center p-4">
               {children}
             </main>
