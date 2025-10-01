@@ -58,8 +58,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
         suppressHydrationWarning
       >
         <ThemeProvider>
-          <ThemeToggle />
           <div className="min-h-screen flex flex-col">
+            <ThemeToggle />
             <main className="flex-1 flex items-center justify-center p-4">
               {children}
             </main>

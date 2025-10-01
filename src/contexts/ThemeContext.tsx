@@ -51,11 +51,6 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     setThemeState(newTheme)
   }
 
-  // Prevent hydration mismatch by not rendering until mounted
-  if (!mounted) {
-    return <div style={{ visibility: 'hidden' }}>{children}</div>
-  }
-
   const value: ThemeContextType = {
     theme,
     toggleTheme,
@@ -64,7 +59,11 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={value}>
-      {children}
+      {!mounted ? (
+        <div style={{ visibility: 'hidden' }}>{children}</div>
+      ) : (
+        children
+      )}
     </ThemeContext.Provider>
   )
 }
