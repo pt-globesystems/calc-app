@@ -4,12 +4,11 @@
 **Name**: calc-app
 **Description**: AI-generated prototype
 **Technology Stack**: nextjs
-**Last Updated**: 2025-09-30
+**Last Updated**: 2025-10-01
 **Total Files**: 4
 
-## Recent Upgrade (2025-09-30)
-**Description**: please solve this issue with Error: Cannot find module '@tailwindcss/forms'
-it does not seem like it is in the packages
+## Recent Upgrade (2025-10-01)
+**Description**: currently the page can be shown and buttons clicked but the actual dark/light mode features does not work, also the calcualtor itself does not output the calculations of the input, please fix that.
 **Files Modified**: 4 files updated
 **QA Iterations**: 3
 **Upgrade Strategy**: Optimized single-pass
